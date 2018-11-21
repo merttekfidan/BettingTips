@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/test', function () {
+    $matches = App\Model\Matches::find(1)->sonuc;
+    return $matches;
+});

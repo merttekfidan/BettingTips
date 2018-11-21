@@ -15,7 +15,17 @@ class CreateMatchesTable extends Migration
     {
         Schema::create('matches', function (Blueprint $table) {
             $table->increments('id');
+            $table->date('tarih');
+            $table->time('saat');
+            $table->integer('kod');
+            $table->string('evSahibi');
+            $table->string('deplasman');
+            $table->string('tahmin');
+            $table->float('oran',2,2);
+            $table->string('organizasyon');
+            $table->integer('status_id');
             $table->timestamps();
+
         });
     }
 

@@ -14,7 +14,7 @@ class MatchesController extends Controller
      */
     public function index()
     {
-        //
+      return $request->all();
     }
 
     /**
